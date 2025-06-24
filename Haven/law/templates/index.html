@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawBot - Your Legal Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <nav class="w-full h-16 p-4 flex items-center justify-between border-b shadow-sm bg-white fixed top-0 left-0 z-50">
+      <a href="/" class="font-bold text-2xl tracking-wide hover:text-blue-500 transition-colors duration-200">
+        Support<span class="text-blue-700">Safe</span>
+      </a>
+      <div class="flex items-center justify-center gap-10 font-medium text-gray-600">
+        <a href="/" class="hover:text-blue-700 transition-colors duration-200">Home</a>
+        <a href="http://localhost:5001/" class="hover:text-blue-700 transition-colors duration-200">Health Tracker</a>
+        <a href="http://localhost:3000" class="hover:text-blue-700 transition-colors duration-200">Chat</a>
+        <a href="http://localhost:8000" class="hover:text-blue-700 transition-colors duration-200">Law Bot</a>
+        <a href="http://localhost:5173/therapy-bot" class="hover:text-blue-700 transition-colors duration-200">Therapy Bot</a>
+      </div>
+    </nav>
+    <div class="container mx-auto px-4 py-8" style="padding-top:5.5rem;">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-800">LawBot</h1>
+            <p class="text-gray-600">Your AI-powered Legal Assistant</p>
+        </header>
+
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg">
+            <div id="chat-container" class="h-96 overflow-y-auto p-4 space-y-4">
+                <div class="bot-message">
+                    <p class="bg-blue-100 p-3 rounded-lg">Hello! I'm your legal assistant. How can I help you today?</p>
+                </div>
+            </div>
+
+            <div class="border-t p-4">
+                <form id="chat-form" class="flex space-x-2">
+                    <input type="text" id="user-input" 
+                           class="flex-1 p-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                           placeholder="Type your legal question here...">
+                    <button type="submit" 
+                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-sm text-gray-600">
+            <p>Note: This is an AI assistant and not a substitute for professional legal advice.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html> 

@@ -1,0 +1,16 @@
+# Ignore all node_modules folders
+**/node_modules/
+
+# Ignore environment config
+.env
+
+# Ignore private keys and certs
+*.pem
+*.key
+*.crt
+*.cert
+
+# Optional: OS and editor junk files
+.DS_Store
+Thumbs.db
+*.log

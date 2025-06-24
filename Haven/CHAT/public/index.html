@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+      <a href="/" class="navbar-brand">Support<span class="navbar-brand-blue">Safe</span></a>
+      <div class="navbar-links">
+        <a href="/" class="navbar-link">Home</a>
+        <a href="http://localhost:5001/" class="navbar-link">Health Tracker</a>
+        <a href="http://localhost:3000" class="navbar-link active">Chat</a>
+        <a href="http://localhost:8000" class="navbar-link">Law Bot</a>
+        <a href="http://localhost:5173/therapy-bot" class="navbar-link">Therapy Bot</a>
+      </div>
+    </nav>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat Room</h1>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <form id="message-form">
+                <div class="input-group">
+                    <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+                    <label for="image-upload" class="upload-btn">
+                        <span>📷</span>
+                        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                    </label>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev:frontend": "cd ai-avatar-frontend && npm run dev",
+    "dev:backend": "cd ai-avatar-backend && node index.js",
+    "dev:chat": "cd CHAT && node server.js",
+    "dev:law": "cd law && venv\\Scripts\\python.exe main.py",
+    "dev:stego": "cd stego-bot && node proxy.js",
+    "dev": "npm-run-all --parallel dev:frontend dev:backend dev:chat dev:law dev:stego"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+} 

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Guna vardhan Byraju",
+      "email": "gunavardhan_byraju@srmap.edu.in",
+      "password": "$2b$10$MAeryiibYgeBmFgo2RrIrukO3oWfe1vMCxqwrIK.BeEWnjI2VHqEe",
+      "isVerified": true,
+      "verificationToken": "2903d305e05847700b55b89d0f747f42d3a3b0a8"
+    },
+    {
+      "name": "Guna vardhan Byraju",
+      "email": "gunavardhan779@gmail.com",
+      "password": "$2b$10$amh48ug/SuVHuavdWs3Dde2oGi7JhyTA6AHYpI6U95/OoM.3mujBK",
+      "isVerified": true,
+      "verificationToken": "cde598152f83c6fe2bcf7aa4e380370b800f9637"
+    },
+    {
+      "name": "Guna",
+      "email": "kanchanakothapalli08@gmail.com",
+      "password": "$2b$10$i8rNb3jDqD47xhxKBrB82O2TLWmM6DZT3I5TYDCEp1KBIaakaMvAS",
+      "isVerified": true,
+      "verificationToken": "d2dcb881f13d3301f15d2a053ec73dc4412fa38e"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #ffcc7e;
+  background-image: linear-gradient(19deg, #ffcc7e 0%, #ddd6f3 100%);
+}
+
+body.greenScreen {
+  background-color: #00ff00;
+  background-image: none;
+}
+
+/* SupportSafe Navbar Styling for LawBot page */
+.supportsafe-navbar {
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #e5e7eb; /* Light border bottom */
+    padding: 1rem 2rem; /* Padding */
+    display: flex;
+    justify-content: space-between; /* Space out brand and links */
+    align-items: center;
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: none; /* No shadow */
+}
+
+.supportsafe-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-size: 1.25rem;
+    font-weight: 700; /* Bolder font for brand */
+    color: #3b82f6; /* SupportSafe blue color */
+}
+
+.supportsafe-nav-links {
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+    align-items: center;
+}
+
+.supportsafe-nav-links a {
+    color: #1f2937; /* Dark text color for links */
+    text-decoration: none;
+    font-weight: 400; /* Standard font weight */
+    padding: 0;
+    border-radius: 0;
+    transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+.supportsafe-nav-links a:hover {
+    color: #3b82f6; /* Blue color on hover */
+    background-color: transparent; /* No background change on hover */
+}
+
+.supportsafe-nav-links a.active {
+    color: #3b82f6; /* Blue color for active link */
+    background-color: transparent; /* No background for active link */
+    border-bottom: 2px solid #3b82f6; /* Blue underline for active link */
+    padding-bottom: 0.25rem; /* Space for the underline */
+}
